@@ -1,0 +1,31 @@
+{
+  "name": "diablo-web-backend",
+  "version": "1.0.0",
+  "description": "diablo web backend",
+  "main": "server.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18 <19"
+  },
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "data:import": "node backend/seeder.js",
+    "data:destroy": "node backend/seeder.js -d"
+  },
+  "author": "nguyenthanhnam",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^8.2.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "discord.js": "^14.11.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.4.1",
+    "next": "^13.4.16",
+    "nodemon": "^3.0.1"
+  }
+}

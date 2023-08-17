@@ -1,0 +1,72 @@
+# Node.js / Next.js 
+node_modules/
+.next/
+out/
+.pnp
+.pnp.js
+
+# testing 
+coverage/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.build
+.env.production
+.env.staging
+
+# Dependency lock files
+yarn.lock
+package-lock.json
+
+# Log files
+*.log
+
+# Compiled output
+dist/
+
+# misc
+.DS_Store
+*.pem
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Build output
+build/
+
+# Dependency directories
+bower_components/
+
+# Cache directories
+.cache/
+.cached/
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+
+# Express server specific
+npm-debug.log*
+
+# Ignore sensitive files (modify as needed)
+config.json
+config/credentials.json
+
+# Next-auth specific
+.nextauth.js
+
+# Temporary files
+*.swp
+*.swo
+
+# vercel
+.vercel
+
+# generated files
+public/rss/
+
+# another files
+next-auth-data
