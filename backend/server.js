@@ -13,14 +13,8 @@ const PORT = process.env.PORT || 5000;
 const app = express();
 connectMongoDB();
 
-
-const allowedOrigins = [
-  "https://shadowgg.com",
-  "https://shadowgg.com/",
-];
-
 app.use(cors({
-  origin: allowedOrigins,
+  origin: "https://shadowgg.com",
   credentials: true
 }));
 
