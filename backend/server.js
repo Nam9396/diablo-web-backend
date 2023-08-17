@@ -13,7 +13,17 @@ const PORT = process.env.PORT || 5000;
 const app = express();
 connectMongoDB();
 
-app.use(cors({ origin: "https://www.shadowgg.com", credentials: true  })); //sau khi da deploy, cho origin nay that la kho hieu
+
+const allowedOrigins = [
+  "https://shadowgg.com",
+  "https://shadowgg.com/",
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true
+}));
+
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
