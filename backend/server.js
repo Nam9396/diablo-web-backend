@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5000;
 const app = express();
 connectMongoDB();
 
-app.use(cors({ origin: "http://localhost:3000", credentials: true  })); //sau khi da deploy, cho origin nay that la kho hieu
+app.use(cors({ origin: "https://diablo-web-nextjs.vercel.app", credentials: true  })); //sau khi da deploy, cho origin nay that la kho hieu
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
