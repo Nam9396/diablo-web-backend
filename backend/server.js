@@ -14,7 +14,7 @@ const app = express();
 connectMongoDB();
 
 app.use(cors({
-  origin: "https://shadowgg.com/",
+  origin: "https://www.shadowgg.com",
   credentials: true
 }));
 
