@@ -14,9 +14,8 @@ const app = express();
 connectMongoDB();
 
 app.use(cors({
-  // origin: "https://shadowgg.com",
-  // credentials: true
-  origin: "*"
+  origin: "https://shadowgg.com",
+  credentials: true
 }));
 
 app.use(cookieParser());
