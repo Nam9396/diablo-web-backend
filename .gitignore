@@ -15,6 +15,7 @@ coverage/
 .env.build
 .env.production
 .env.staging
+config.json
 
 # Dependency lock files
 yarn.lock

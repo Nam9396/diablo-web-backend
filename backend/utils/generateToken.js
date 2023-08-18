@@ -17,7 +17,7 @@ const generateToken = (res, user) => {
   } 
   res.cookie('jwt', token, { 
     httpOnly: true, 
-    sameSite: 'none', 
+    sameSite: 'none', //sau khi deploy sameSite Strict khien cookie khong duoc luu, nhung chuyen sang none thi no duoc luu, van de cua none la can secure
     secure: process.env.NODE_ENV !== 'development',
     maxAge: 30 * 24 * 60 * 60 * 1000 ,
   })
